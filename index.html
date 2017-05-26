@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia GAme</title>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css">
+
+</head>
+
+<body id="basketball">
+  <div class="container">
+    <div class="jumbotron">
+      <h1 id="heading">Are you ready for this?</h1>
+      <p>Test your NBA fun fact knowledge here. Try to answer the following ten questions in under 30 seconds. Press the button to start.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button" id="start-button">Jump Ball!</a></p>
+      <p id="seconds"></p>
+    </div><!--jumbotron-->
+    <!--<div class="container" id="questions">-->
+    <div class="row"><!--row 1-->
+      <div class="col-md-12">
+       Question 1: Which of these NBA players did NOT pursue a rap career?
+      </div><!--col-md-12-->
+    </div><!--row 1-->
+    <div class="row"><!--row 2-->
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_1" id="NBA_1" value="Tony Parker">
+            Tony Parker
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_1" id="NBA_2" value="Kobe Bryant">
+            Kobe Bryant
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_1" id="NBA_3" value="Dwayne Wade">
+            Dwayne Wade
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_1" id="NBA_4" value="Shaquille O'Neal">
+            Shaquille O'Neal
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_1" id="NBA_5" value="Metta World Peace">
+            Metta World Peace
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_1" id="NBA_6" value="Damian Lillard">
+            Damian Lillard
+        </label>
+      </div>
+    </div><!--row 2-->
+    <div class="row"><!--row 3-->
+      <div class="col-md-12">
+       Question 2: What is Ray Allen's real first name?
+      </div><!--col-md-12-->
+    </div><!--row-->
+    <div class="row">
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_2" id="NBA_7" value="Walter">
+            Walter
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_2" id="NBA_8" value="LeBron">
+            LeBron
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_2" id="NBA_9" value="Joseph">
+            Joseph
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_2" id="NBA_10" value="Derek">
+            Derek
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_2" id="NBA_11" value="Eli">
+            Eli
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_2" id="NBA_12" value="William">
+            William
+        </label>
+      </div>
+    </div><!--row 3-->
+    <div class="row"><!--row 4-->
+      <div class="col-md-12">
+       Question 3: Which of these NBA players went to Medical School?
+      </div><!--col-md-12-->
+    </div><!--row-->
+    <div class="row">
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_3" id="NBA_13" value="Steph Curry">
+            Steph Curry
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_3" id="NBA_14" value="Chris Paul">
+            Chris Paul
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_3" id="NBA_15" value="Marc Gasol">
+            Marc Gasol
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_3" id="NBA_16" value="Pau Gasol">
+            Pau Gasol
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_3" id="NBA_17" value="Tim Duncan">
+            Tim Duncan
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_3" id="NBA_18" value="Kevin Love">
+            Kevin Love
+        </label>
+      </div>
+    </div><!--row 4-->
+    <div class="row"><!--row 5-->
+      <div class="col-md-12">
+       Question 4: Who is the only Rookie of the Year to lead in scoring?
+      </div><!--col-md-12-->
+    </div><!--row-->
+    <div class="row">
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_4" id="NBA_19" value="Michael Jordan">
+            Michael Jordan
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_4" id="NBA_20" value="Kobe Bryant">
+            Kobe Bryant
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_4" id="NBA_21" value="Kareem Abdul Jabar">
+            Kareem Abdul Jabar
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_4" id="NBA_22" value="Patrick Ewing">
+            Patrick Ewing
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_4" id="NBA_23" value="Wilt Chamberlain">
+            Wilt Chamberlain
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_4" id="NBA_24" value="Kawhi Leonard">
+            Kawhi Leonard
+        </label>
+      </div>
+    </div><!--row 5-->
+    <div class="row"><!--row 6-->
+      <div class="col-md-12">
+       Question 5: In the fifth game of the 1984 playoffs, Isiah Thomas of the Detroit Pistons, scored how many points in 94 seconds to try to win the game?
+      </div><!--col-md-12-->
+    </div><!--row-->
+    <div class="row">
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_5" id="NBA_25" value="10">
+            10
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_5" id="NBA_26" value="15">
+            15
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_5" id="NBA_27" value="22">
+            22
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_5" id="NBA_28" value="16">
+            16
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_5" id="NBA_29" value="28">
+            28
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_5" id="NBA_30" value="11">
+            11
+        </label>
+      </div>
+    </div><!--row 6-->
+    <div class="row"><!--row 7-->
+      <div class="col-md-12">
+       Question 6: Who holds the record for most steals in a playoff game?
+      </div><!--col-md-12-->
+    </div><!--row-->
+    <div class="row">
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_6" id="NBA_31" value="Russel Westbrook">
+            Russel Westbrook
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_6" id="NBA_32" value="Kevin Durant">
+            Kevin Durant
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_6" id="NBA_33" value="Chauncy Billups">
+            Chauncy Billups
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_6" id="NBA_34" value="Sean Livingston">
+            Sean Livingston
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_6" id="NBA_35" value="Allen Iverson">
+            Allen Iverson
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_6" id="NBA_36" value="Klay Thompson">
+            Klay Thompson
+        </label>
+      </div>
+    </div><!--row 7-->
+    <div class="row"><!--row 8-->
+      <div class="col-md-12">
+       Question 7: How tall was the tallest player in the NBA?
+      </div><!--col-md-12-->
+    </div><!--row-->
+    <div class="row">
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_7" id="NBA_37" value="7'7">
+            7'7
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_7" id="NBA_38" value="7'5">
+            7'5
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_7" id="NBA_39" value="7'9">
+            7'9
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_7" id="NBA_40" value="7'11">
+            7'11
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_7" id="NBA_41" value="7'2">
+            7'2
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_7" id="NBA_42" value="8'0">
+            8'0
+        </label>
+      </div>
+    </div><!--row 8-->
+    <div class="row"><!--row 9-->
+      <div class="col-md-12">
+       Question 8: How tall was the shortest player in the NBA?
+      </div><!--col-md-12-->
+    </div><!--row-->
+    <div class="row">
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_8" id="NBA_43" value="5'0">
+            5'0
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_8" id="NBA_44" value="5'3">
+            5'3
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_8" id="NBA_45" value="5'5">
+            5'5
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_8" id="NBA_46" value="5'7">
+            5'7
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_8" id="NBA_47" value="5'9">
+            5'9
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_8" id="NBA_48" value="6'2">
+            6'2
+        </label>
+      </div>
+    </div><!--row 9-->
+    <div class="row"><!--row 10-->
+      <div class="col-md-12">
+       Question 9: What size shoe does Shaquille O'Neal wear?
+      </div><!--col-md-12-->
+    </div><!--row-->
+    <div class="row">
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_9" id="NBA_49" value="25">
+            25
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_9" id="NBA_50" value="24">
+            24
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_9" id="NBA_51" value="18">
+            18
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_9" id="NBA_52" value="29">
+            29
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_9" id="NBA_53" value="20">
+            20
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_9" id="NBA_54" value="27 1/2">
+            27 1/2
+        </label>
+      </div>
+    </div><!--row 10-->
+    <div class="row"><!--row 11-->
+      <div class="col-md-12">
+       Question 10: Who was fined $5,000 for every game he played wearing his own signature shoes?
+      </div><!--col-md-12-->
+    </div><!--row-->
+    <div class="row">
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_10" id="NBA_13" value="Kobe Bryant">
+            Kobe Bryant
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_10" id="NBA_14" value="Magic Johnson">
+            Magic Johnson
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_10" id="NBA_15" value="Carmelo Anthony">
+            Carmelo Anthony
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_10" id="NBA_16" value="Kevin Garnett">
+            Kevin Garnett
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_10" id="NBA_17" value="Michael Jordan">
+            Michael Jordan
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label class="radio-inline">
+          <input type="radio" name="question_10" id="NBA_18" value="LeBron James">
+            LeBron James
+        </label>
+      </div>
+    </div><!--row 11-->
+    <div class="row"><!--row 12-->
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-default" id="submit">Buzzer Beater</button>
+    </div>
+    </div><!--row 12-->
+  <!--</div><!-container-->
+  </div><!--container-->
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
