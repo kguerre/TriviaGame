@@ -14,13 +14,15 @@
 
 <body id="basketball">
   <div class="container">
+  <div id="opening-page">
     <div class="jumbotron">
       <h1 id="heading">Are you ready for this?</h1>
-      <p>Test your NBA fun fact knowledge here. Try to answer the following ten questions in under 30 seconds. Press the button to start.</p>
+      <p>Test your NBA fun fact knowledge here. Try to answer the following ten questions in under 90 seconds. Press the button to start.</p>
       <p><a class="btn btn-primary btn-lg" href="#" role="button" id="start-button">Jump Ball!</a></p>
       <p id="seconds"></p>
     </div><!--jumbotron-->
-    <!--<div class="container" id="questions">-->
+  </div><!--opening page-->
+    <div id="questions"><!--div 2-->
     <div class="row"><!--row 1-->
       <div class="col-md-12">
        Question 1: Which of these NBA players did NOT pursue a rap career?
@@ -456,7 +458,15 @@
       <button type="button" class="btn btn-default" id="submit">Buzzer Beater</button>
     </div>
     </div><!--row 12-->
-  <!--</div><!-container-->
+  </div><!--id questions-->
+  <div class="row" id="score-board">
+    <p id="win-loss"></p>
+    <p id="right"></p>
+    <p id="wrong"></p>
+    <p id="gif-goes-here"></p>
+  </div><!--score board-->
+  <!-- <div class="row" id="gif-goes-here"> -->
+  </div>
   </div><!--container-->
 
 <script type="text/javascript" src="assets/javascript/app.js"></script>

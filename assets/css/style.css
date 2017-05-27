@@ -1,6 +1,4 @@
 #basketball {
-	/*background-image: url("assets/images/hoop.jpg");
-	background-repeat: repeat;*/
 	background-color: #ffa500;
 }
 
@@ -21,4 +19,32 @@ h1, p {
 #submit {
 	margin-top: 20px;
 	align-content: center;
+}
+
+#questions, #score_board {
+	display: none;
+}
+
+#score-board {
+	height: 450px;
+	width: 600px;
+	margin: 0 auto;
+	background-color: #cccccc;
+	display: none;
+	align-content: center;
+	font-size: 22px;
+	font-color: #000000;
+}
+
+#win-loss {
+	font-family: 'Faster One', cursive;
+	font-size: 32px;
+}
+
+#gif-goes-here {
+	align-content: center;
+}
+
+img {
+	margin: 0 auto;
 }
