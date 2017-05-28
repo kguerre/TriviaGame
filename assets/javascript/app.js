@@ -27,6 +27,8 @@ var answers = [
 //startGame()
 	function startGame() {
 		$("#questions").show();
+		number = 90;
+		guesses= [];
 		startTimer();
 
 	}
@@ -84,6 +86,5 @@ var answers = [
 			$("#gif-goes-here").html('<img src="https://media.giphy.com/media/3o7qE8XB0J4nr53oRO/giphy.gif"/>');
 		}
 	}
-	
 
 });
