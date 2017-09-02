@@ -1,5 +1,4 @@
 # TriviaGame
-Homework 5
 
 ### Overview
 
@@ -10,6 +9,6 @@ In this activity, I create a time NBA themed Trivia game using JavaScript and jQ
 
 * The player must finish the game before the clock runs out. 
 
-  * When the game ends, the page reveals the number of questions that the player answered correctly and incorrectly.
+* When the game ends, the page reveals the number of questions that the player answered correctly and incorrectly.
 
 
