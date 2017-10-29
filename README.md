@@ -11,4 +11,4 @@ In this activity, I create a time NBA themed Trivia game using JavaScript and jQ
 
 * When the game ends, the page reveals the number of questions that the player answered correctly and incorrectly.
 
-
+[Check it out!](https://kguerre.github.io/TriviaGame/)
